@@ -1,12 +1,16 @@
 node_modules/
 dist/
 
-# Secrets - never commit
+# 秘密情報 - 絶対にcommitしない
 .env
 .env.local
 credentials.json
+client_secret.json
 .clasprc.json
 
 .DS_Store
+
+# デプロイ先は .env の JEV_SCRIPT_ID から生成する
+.clasp.json
 
 .claude

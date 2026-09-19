@@ -1,0 +1,21 @@
+{
+  "name": "jev-sheets",
+  "version": "0.1.0",
+  "description": "Google Sheets custom functions for Jev using Google Apps Script.",
+  "private": true,
+  "scripts": {
+    "test": "node --test \"tests/**/*.unit.test.js\"",
+    "build": "node tools/build.js && node tools/verify-dist.js",
+    "try": "node tools/try.js",
+    "push": "npm run build && node tools/clasp-config.js && clasp push --force",
+    "logs": "clasp tail-logs",
+    "open": "clasp open-script"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@google/clasp": "^3.4.1"
+  }
+}
